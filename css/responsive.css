@@ -1,0 +1,46 @@
+@media only screen and (max-width: 950px) {
+    .add-task #add-task-button{
+        width: 50%;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 9vw;
+    }
+
+    .add-task{
+        width: 105%;
+    }
+
+    .header h5{
+        font-size: 15px;
+    }
+
+    .left-side{
+        width: 105%;
+        vertical-align: center;
+    }
+
+    .task{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .task-check{
+        width: 11px;
+        height: 11px; 
+    }
+
+    .date{
+        display: inline-block;
+    }
+
+    .icons{
+        display: inline-block;
+    }
+
+    .gorevName{
+        max-width: 90%;
+        margin-left: 2px;
+    }
+    
+  }
+  
