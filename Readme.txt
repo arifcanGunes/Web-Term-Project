@@ -13,3 +13,7 @@ Dökümantasyon:
     Görev ismini yanındaki tarih ve saat bilgileri eklenme tarihini göstermektedir.
     Tarhi ve saat bilgilerinin yanındaki ilk ikon görevi tekil olarak silmek bir yanındaki buton ise düzenlemek için kullanılmıştır.
     Düzenleme butonuna basıldığında görev yukarıdaki input kısmına gelmekte ve gerekli düzenlemeler yapıldıktan sonra Enter tuşuna basılmalıdır.
+Grup: 
+    Arif Can Güneş 220229038    
+    Sefa Bayrak 230229023
+    Ömer Mete Aydın 230229063

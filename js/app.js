@@ -9,7 +9,7 @@ if (localStorage.getItem("taskList") !== null) {
 
 let editTaskId;
 let isEditTask = false;
-
+ //take document object 
 let input = document.getElementById("taskInput");
 let addBtn = document.getElementById("add-task-button");
 let btnClear = document.getElementById("clearAll");
@@ -27,6 +27,8 @@ function updateSpanStatus() {
 }
 showTask("all");
 updateSpanStatus();
+
+//list task fır filter
 function showTask(filter) {
     let tasks = document.querySelector(".tasks");
     tasks.innerHTML = "";
@@ -59,6 +61,7 @@ function showTask(filter) {
     }
 }
 
+// add new task button
 addBtn.addEventListener("click", newTask);
 input.addEventListener("keyup", function (event) {
     event.preventDefault();
@@ -67,6 +70,7 @@ input.addEventListener("keyup", function (event) {
     }
 });
 
+//delete task by id
 function deleteTask(id) {
     let deletedIndex;
     for (let index in gorevListesi) {
@@ -79,6 +83,8 @@ function deleteTask(id) {
     showTask("all");
 }
 
+
+//add or edit the task
 function newTask() {
     document.querySelector("span.active").classList.remove("active");
     for (let span of spans) {
@@ -119,7 +125,7 @@ function newTask() {
 }
 
 
-
+//delete all tasks on the list 
 btnClear.addEventListener("click", () => {
     gorevListesi.splice(0, gorevListesi.length);
     localStorage.setItem("taskList", JSON.stringify(gorevListesi));
@@ -127,6 +133,7 @@ btnClear.addEventListener("click", () => {
 });
 
 
+//edit task by id
 function editTask(id, taskName) {
     editTaskId = id;
     isEditTask = true;
@@ -137,6 +144,7 @@ function editTask(id, taskName) {
     console.log(taskName);
 }
 
+//change task status with checkbox
 function updateStatus(task) {
     let label = task.parentElement.lastElementChild;
     let durum;
